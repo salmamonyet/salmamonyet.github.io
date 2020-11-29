@@ -758,14 +758,14 @@
 				$(".ucapan").append('<span id="spannama2"></span>');
 				var today = new Date();
 				var h = today.getHours();
-				if(h>22)tulis('malam','tidur bwgo');
-				else if(h>19)tulis('malam','ingett tugas numpuk');
-				else if(h>16)tulis('petang','mandi duluu nyet');
-				else if(h>14)tulis('sore','hape terosss');
-				else if(h>11)tulis('siang','tidur lagi lah')
-				else if(h>7)tulis('siang','jan lupa absen blok')
-				else if(h>4)tulis('pagi','pagii beban keluarga');
-				else tulis('malam','seharusnya kamu sudah tidur');
+				if(h>22)tulis('tidur bwgo');
+				else if(h>19)tulis('ingett tugas numpuk');
+				else if(h>16)tulis('mandi duluu nyet');
+				else if(h>14)tulis('hape terosss');
+				else if(h>11)tulis('tidur lagi lah');
+				else if(h>7)tulis('jan lupa absen blok');
+				else if(h>4)tulis('pagii beban keluarga');
+				
 				selesai=true;
 			}
 			function resetposisi(){
@@ -798,14 +798,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>22)tulis('malam','tidur bwgo');
-					else if(h>19)tulis('malam','inget tugas numpuk');
-					else if(h>16)tulis('petang','mandi dulu nyet');
-					else if(h>14)tulis('sore','hape teross');
-					else if(h>11)tulis('siang','tidur lagi lah')
-					else if(h>7)tulis('siang','jan lupa absen blok')
-					else if(h>4)tulis('pagi','pagi beban keluarga');
-					else tulis('malam','seharusnya kamu sudah tidur');
+					if(h>22)tulis('tidur bwgo');
+					else if(h>19)tulis('inget tugas numpuk');
+					else if(h>16)tulis('mandi dulu nyet');
+					else if(h>14)tulis('hape teross');
+					else if(h>11)tulis('tidur lagi lah');
+					else if(h>7)tulis('jan lupa absen blok');
+					else if(h>4)tulis('pagi beban keluarga');
+			
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
@@ -816,7 +816,7 @@
 					jalan=true;
 				}
 			}
-			function tulis(waktu,ucapan){
+			function tulis(ucapan){
 				$("#spannama2").text('Selamat '+waktu+' '+localStorage.getItem("nama")+', '+ucapan+'.');
 			}
 			function checkTime(i) {
